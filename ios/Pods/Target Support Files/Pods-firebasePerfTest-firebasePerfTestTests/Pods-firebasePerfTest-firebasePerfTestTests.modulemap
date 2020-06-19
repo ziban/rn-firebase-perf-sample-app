@@ -1,0 +1,6 @@
+module Pods_firebasePerfTest_firebasePerfTestTests {
+  umbrella header "Pods-firebasePerfTest-firebasePerfTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
