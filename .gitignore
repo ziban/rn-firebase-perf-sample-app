@@ -59,3 +59,5 @@ gradle.properties
 
 #coverage
 /coverage
+
+android/app/google-services.json
