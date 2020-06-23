@@ -17,6 +17,7 @@ import {
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import firebaseCalls from './firebaseCalls';
+import ToastExample from './ToastExample';
 
 const App: () => React$Node = () => {
   useEffect(() => {
@@ -27,6 +28,11 @@ const App: () => React$Node = () => {
       console.log('These are the countries we got', countries);
     });
   });
+
+  const getToast = () => {
+    console.log('we are calling toast example');
+    return <View>{ToastExample.show('Testing new', ToastExample.LONG)}</View>;
+  };
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -43,6 +49,7 @@ const App: () => React$Node = () => {
                 </Text>
               </Text>
             </View>
+            {getToast()}
           </View>
         </ScrollView>
       </SafeAreaView>
